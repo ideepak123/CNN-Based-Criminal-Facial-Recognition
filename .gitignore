@@ -1,0 +1,13 @@
+# Virtual Environment
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Uploaded Images
+static/uploads/*
+
+# System Files
+.DS_Store
+Thumbs.db

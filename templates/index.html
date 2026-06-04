@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Criminal Facial Recognition</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',
+    filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Criminal Facial Recognition</h1>
+
+        <p class="subtitle">
+            Upload an image to identify a person
+        </p>
+
+        <div class="upload-box">
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+
+                <input type="file" name="image" required>
+
+                <br><br>
+
+                <button type="submit">
+                    Detect Person
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

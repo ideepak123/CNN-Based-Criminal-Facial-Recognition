@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Detection Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',
+    filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Criminal Detection Result</h1>
+
+        <img src="{{ url_for(
+        'static',
+        filename='uploads/' + image
+        ) }}">
+
+        <div class="result-card">
+
+            <h2>
+                Person:
+                {{ criminal_name }}
+            </h2>
+
+            <h3>
+                Confidence:
+                {{ confidence }}
+            </h3>
+
+            <br>
+
+            {% if criminal_info %}
+
+            <p>
+                <strong>Criminal ID:</strong>
+                {{ criminal_info.criminal_id }}
+            </p>
+
+            <p>
+                <strong>Crime Type:</strong>
+                {{ criminal_info.crime }}
+            </p>
+
+            <p>
+                <strong>Status:</strong>
+                {{ criminal_info.status }}
+            </p>
+
+            <p>
+                <strong>Last Seen:</strong>
+                {{ criminal_info.last_seen }}
+            </p>
+
+            {% else %}
+
+            <p>
+                No Criminal Record Found
+            </p>
+
+            {% endif %}
+
+        </div>
+
+        <a href="/" class="back-btn">
+            Upload Another Image
+        </a>
+
+    </div>
+
+</body>
+
+</html>

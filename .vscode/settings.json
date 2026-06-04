@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "git.showPushSuccessNotification": true,
+    "extensions.ignoreRecommendations": true,
+    "git.supportCancellation": true,
+    "python-envs.pythonProjects": []
+}
