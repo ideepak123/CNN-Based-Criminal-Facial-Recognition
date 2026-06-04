@@ -4,7 +4,7 @@ A deep learning-based Criminal Facial Recognition System built using **Inception
 
 ## Features
 
-* Criminal Face Detection using OpenCV
+* Face Detection using OpenCV
 * Facial Recognition using InceptionV3 CNN
 * Deep Learning Model Training
 * Criminal Information Display
